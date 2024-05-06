@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="nav-container">
+        <div class="Logo">
+            <img src="/asset/travel-logo.png" style="max-height: 40px; ">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#ourPackage">Our Package</a>
+            <a href="#">Call Us</a>
+        </nav>
+    </header>
+
+    <article class="content-wrap"> <!-- content container -->
+        <div class="home" id="home">home</div>
+        <header>
+            <h1 id="home">Your Trusted Travel Agent's</h1><br>
+            <label>Your Happiness is Our Happiness</label>
+        </header>
+
+        <section class="main-content">  <!-- core-content -->
+            <div class="content-item item-left"> <!-- core item left -->
+                <div class="photo">
+                    <img src="/asset/thailand.jpg" style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="comment">"Liburanku jadi menyenangkan bersama Travel Agentku"</div>
+                <div class="mini-profile">
+                    <table>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="/asset/cat.png" alt="" class="mini-profile-img" style="max-width: 50px; background-color: bisque;">
+                            </td>
+                            <td class="mini-profile-name">Florence Hughes</td>
+                        </tr>
+                        <tr>
+                            <td class="mini-profile-job">Ibu Rumah Tangga, 28</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> 
+
+            <div class="content-item item-right"> <!-- core item right -->
+                <header>
+                    <h1>Contact Us</h1>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                </header><br>
+                <section class="form-content">
+                    <label>Name</label>
+                    <input type="text" class="inputBox" placeholder="First and Last Name"><br>
+                    <label>Email Adress</label>
+                    <input type="email" class="inputBox" placeholder="example@email.com"><br>
+                    <label>What are you interested in?</label>
+                    <select>
+                        <option selected disabled hidden>Select option</option>
+                        <option>Bali</option>
+                        <option>Japan</option>
+                        <option>Singapore</option>
+                        <option>Malaysia</option>
+                        <option>Korea</option>
+                        <option>Thailand</option>
+                    </select><br>
+                    <input class="btnSend" type="submit" value="SEND">
+                </section>
+            </div>
+        </section>
+
+        <section class="ourpackage-content" id="ourPackage"> <!-- Our Package content -->
+            <header>
+                <h1>Our Package</h1>
+            </header>
+            <section class="destination-content">
+                <section class="destination">
+                    <img src="/asset/pin.png" alt="">
+                    <h2>Bali</h2>
+                    <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </section>
+                <section class="destination">
+                    <img src="/asset/pin.png" alt="">
+                    <h2>Japan</h2>
+                    <p>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </section>
+                <section class="destination">
+                    <img src="/asset/pin.png" alt="">
+                    <h2>Singapore</h2>
+                    <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </section>
+                <section class="destination">
+                    <img src="/asset/pin.png" alt="">
+                    <h2>Malaysia</h2>
+                    <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </section>
+                <section class="destination">
+                    <img src="/asset/pin.png" alt="">
+                    <h2>Korea</h2>
+                    <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </section>
+                <section class="destination">
+                    <img src="/asset/pin.png" alt="">
+                    <h2>Thailand</h2>
+                    <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </section>
+            </section>
+        </section>
+    </article>
+    <section>
+        <header>
+            <h1>Testimoni</h1>
+        </header>
+    </section>
+    <hr>
+    <footer>
+        <h5>&copy; Daffa Rizqi Aulia 2024</h5>
+    </footer>
 </body>
 </html>

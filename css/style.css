@@ -1,1 +1,211 @@
 /* ini css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar wrap */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px 20px 15px;
+    background-color: rgb(126, 70, 231);
+    opacity: 1.0;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+}
+/* menu kanan */
+.nav-container>nav{
+    margin-right: 20px;
+}
+.nav-container>nav>a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 31px 35px;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.5em;
+}
+.nav-container>nav>a:hover{    
+    background-color: rgb(80, 44, 146);
+    transition: ease-in-out 0.4s;
+}
+
+.content-wrap>header{ /* content container */
+    margin-top: 100px;
+    text-align: center;
+}
+.content-wrap>header>label{
+    color: rgb(156, 156, 156);
+}
+.main-content{  /* BOX WRAP */
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 20px 100px;
+}
+
+.content-item{  /* 2 BOX */
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 18px;
+}
+/* BOX kiri - Photo*/
+.item-left{
+    height: 550px;
+    width: 60%;
+}
+/* gambar */
+.photo{
+    height: 394px;
+    width: 700px;
+margin-left: 50px;
+}
+.photo>img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.comment{
+    color: silver;
+    margin-left: 180px;
+    margin-top: 20px;
+    max-width: 50%;
+}
+.mini-profile{
+    width: 50%;
+    margin: 10px 180px;
+}
+.mini-profile-img{
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.mini-profile-name{
+    font-size: 12px;
+    font-weight: bold;
+}
+.mini-profile-job{
+    font-size: 12px;
+    color: silver;
+}
+/* BOX Kanan - CONTACT US */
+.item-right{
+    height: 550px;
+    width: 330px;
+    background-color:rgb(233, 233, 233);
+    border-radius: 8px;
+}
+
+/* Header */
+.item-right>header{
+    margin-top: 25px;
+    
+}
+.item-right>header>h1{ 
+    margin-bottom: 10px;
+    font-size: 24px;
+    margin-left: 40px;
+}
+.item-right>header>p{
+    color: rgb(160, 159, 159);
+    font-size: 14px;
+    text-align: left;
+    max-width: 80%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Form input */
+.form-content{
+    margin-left: 40px; 
+}
+/* Text name,email,interested */
+.form-content>label{
+    display: flex;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/* Input Nama&Email */
+.inputBox{
+    height: 30px;
+    width: 80%;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 4px;
+    padding: 5px;
+}
+/* ComboBox Tujuan*/
+.form-content>select{
+    width: 84%;
+    height: 34px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 4px;
+    text-align: left;
+    padding: 5px;
+}
+
+/* Tombol SEND */
+.btnSend{
+    width: 82%;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(126, 70, 231);
+    margin-top: 40px;
+    border-radius: 4px;
+    border: none;
+}
+.btnSend:hover{
+    color: rgb(226, 226, 226);
+    background-color: rgb(80, 44, 146);
+    transition: ease-in-out 0.3s;
+}
+/* OUR PACKAGE */
+.ourpackage-content>header{
+    background-color: rgb(126, 70, 231);
+}
+.ourpackage-content>header>h1{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+.destination-content{
+    margin: 50px 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 30px;
+}
+.destination{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 14px;
+}
+.destination img {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+  .destination h2,p{
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .destination:hover{
+    background-color: rgb(126, 70, 231);
+    color: white;
+    transition: ease-in-out 0.3s;
+  }
+  footer{
+    text-align: right;
+  }
