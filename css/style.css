@@ -3,10 +3,9 @@
     margin: 0;
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-html{
     scroll-behavior: smooth;
 }
+
 /* navbar wrap */
 .nav-container{
     display: flex;
@@ -18,7 +17,7 @@ html{
     top: 0; 
     width: 100%;
 }
-/* menu kanan */
+/* navbar menu kanan */
 .nav-container>nav{
     margin-right: 20px;
 }
@@ -33,6 +32,12 @@ html{
 .nav-container>nav>a:hover{    
     background-color: rgb(80, 44, 146);
     transition: ease-in-out 0.4s;
+}
+
+/* KONTEN UTAMA */
+.content-wrap{
+    max-width: 1440px;
+    margin: auto; 
 }
 
 .content-wrap>header{ /* content container */
@@ -55,28 +60,50 @@ html{
 }
 /* BOX kiri - Photo*/
 .item-left{
-    height: 550px;
+    height: 1000px;
     width: 60%;
+    /* border: 1px solid; */
 }
 /* gambar */
 .photo{
-    height: 394px;
-    width: 700px;
-margin-left: 50px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
-.photo>img{
-    max-width: 100%;
+.fade>img{
+    width: 100%;
     border-radius: 10px;
 }
+/* Animasi slideshow */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }  
+@keyframes fade {
+    from {opacity: .7} 
+    to {opacity: 1}
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.active{
+    background-color: #717171;
+}
+
 .comment{
     color: silver;
-    margin-left: 180px;
-    margin-top: 20px;
+    margin: 20px auto;
     max-width: 50%;
 }
 .mini-profile{
     width: 50%;
-    margin: 10px 180px;
+    margin: 10px auto;
 }
 .mini-profile-img{
     margin-right: 10px;
@@ -92,9 +119,15 @@ margin-left: 50px;
     font-size: 12px;
     color: silver;
 }
+.add-on{
+    max-width: 60%;
+    margin: auto;
+    line-height: 1.5em;
+}
+
 /* BOX Kanan - CONTACT US */
 .item-right{
-    height: 550px;
+    height: 600px;
     width: 330px;
     background-color:rgb(233, 233, 233);
     border-radius: 8px;
@@ -108,20 +141,20 @@ margin-left: 50px;
 .item-right>header>h1{ 
     margin-bottom: 10px;
     font-size: 24px;
-    margin-left: 40px;
+    margin-left: 25px;
 }
 .item-right>header>p{
     color: rgb(160, 159, 159);
     font-size: 14px;
     text-align: left;
     max-width: 80%;
-    margin-left: 40px;
+    margin-left: 25px;
     margin-right: 40px;
 }
 
 /* Form input */
 .form-content{
-    margin-left: 40px; 
+    margin-left: 25px; 
 }
 /* Text name,email,interested */
 .form-content>label{
@@ -134,14 +167,14 @@ margin-left: 50px;
 /* Input Nama&Email */
 .inputBox{
     height: 30px;
-    width: 80%;
+    width: 88%;
     border: 1px solid rgb(207, 207, 207);
     border-radius: 4px;
     padding: 5px;
 }
 /* ComboBox Tujuan*/
 .form-content>select{
-    width: 84%;
+    width: 92%;
     height: 34px;
     border: 1px solid rgb(207, 207, 207);
     border-radius: 4px;
@@ -151,7 +184,7 @@ margin-left: 50px;
 
 /* Tombol SEND */
 .btnSend{
-    width: 82%;
+    width: 90%;
     height: 40px;
     color: white;
     font-size: 14px;
@@ -166,9 +199,15 @@ margin-left: 50px;
     background-color: rgb(80, 44, 146);
     transition: ease-in-out 0.3s;
 }
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+
 /* OUR PACKAGE */
 .ourpackage-content>header{
-    background-color: rgb(126, 70, 231);
+    background-color: rgb(126, 70, 231); 
 }
 .ourpackage-content>header>h1{
     font-size: 2em;
@@ -196,16 +235,55 @@ margin-left: 50px;
     height: auto;
     margin-bottom: 5px;
     margin-left: 10px;
-  }
-  .destination h2,p{
+}
+.destination h2,p{
     margin-left: 20px;
     margin-bottom: 10px;
-  }
-  .destination:hover{
+}
+.destination:hover{
     background-color: rgb(126, 70, 231);
     color: white;
     transition: ease-in-out 0.3s;
-  }
-  footer{
-    text-align: right;
-  }
+}
+
+/* Closing Statement */
+.callUs-wrap>header>h1{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.callUs-content>h4{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    max-width: 50%;
+}
+.btnCall{
+    width: 180px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(126, 70, 231);
+    border-radius: 4px;
+    border: none;
+    margin-left: 44%;
+}
+.btnCall:hover{
+    color: rgb(226, 226, 226);
+    background-color: rgb(80, 44, 146);
+    transition: ease-in-out 0.3s;
+}
+
+  /* Footer */
+footer{
+    max-width: 1440px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+footer>h5{
+    color: silver;
+}
