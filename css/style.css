@@ -292,7 +292,6 @@ footer>h5{
 @media (max-width:1026px) {
     .main-content{
         flex-direction: column;
-        
         align-items: center;
     }
     .add-on{

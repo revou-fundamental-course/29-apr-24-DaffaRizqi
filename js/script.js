@@ -1,4 +1,3 @@
-// ini javascript
 
 //form validation
 const form = document.getElementById('form');
@@ -43,7 +42,6 @@ form.addEventListener('submit', function(event) {
         alert('Halo '+namaValue+'. Formulirmu berhasil dikirim!');
     }
 });
-
 // Auto slideshow
 let slideIndex = 0;
 showDivs();
