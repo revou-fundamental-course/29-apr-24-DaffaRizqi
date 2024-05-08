@@ -30,7 +30,8 @@
     line-height: 2.5em;
 }
 .nav-container>nav>a:hover{    
-    background-color: rgb(80, 44, 146);
+    background-color: #5927b0;
+    color: #f5f3ff;
     transition: ease-in-out 0.4s;
 }
 
@@ -195,8 +196,8 @@
     border: none;
 }
 .btnSend:hover{
-    color: rgb(226, 226, 226);
-    background-color: rgb(80, 44, 146);
+    color: #f5f3ff;
+    background-color: #5927b0;
     transition: ease-in-out 0.3s;
 }
 .error-message {
@@ -241,8 +242,8 @@
     margin-bottom: 10px;
 }
 .destination:hover{
-    background-color: rgb(126, 70, 231);
-    color: white;
+    background-color: #6b2fd2;
+    color: #f5f3ff;
     transition: ease-in-out 0.3s;
 }
 
@@ -271,8 +272,8 @@
     margin-left: 44%;
 }
 .btnCall:hover{
-    color: rgb(226, 226, 226);
-    background-color: rgb(80, 44, 146);
+    color: #f5f3ff;
+    background-color: #5927b0;
     transition: ease-in-out 0.3s;
 }
 
@@ -286,4 +287,15 @@ footer{
 }
 footer>h5{
     color: silver;
+}
+
+@media (max-width:1026px) {
+    .main-content{
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .add-on{
+        text-align: center;
+    }
 }
